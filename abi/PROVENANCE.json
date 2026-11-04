@@ -1,0 +1,47 @@
+[
+  {
+    "name": "CreditPool",
+    "source_commit": "81d2b8b93013f3b9dd56655f818b0586437c2279",
+    "compiler": "0.8.31+commit.fd3a2265",
+    "via_ir": false,
+    "evm_version": "osaka",
+    "execution_network": "monad",
+    "sha256": "0665f58ce965b0d79117fa7411d653d2698b883d3913ed597f60021a02b4c2f7"
+  },
+  {
+    "name": "ICreditPool",
+    "source_commit": "81d2b8b93013f3b9dd56655f818b0586437c2279",
+    "compiler": "0.8.31+commit.fd3a2265",
+    "via_ir": false,
+    "evm_version": "osaka",
+    "execution_network": "monad",
+    "sha256": "ec112b74da99443f6388fdc9509be41600d9fd92e60ea7d3ec892c135e38a01c"
+  },
+  {
+    "name": "ICreditPoolEvents",
+    "source_commit": "81d2b8b93013f3b9dd56655f818b0586437c2279",
+    "compiler": "0.8.31+commit.fd3a2265",
+    "via_ir": false,
+    "evm_version": "osaka",
+    "execution_network": "monad",
+    "sha256": "afa6520bc93e005b70825b80c69a8dc7ba47d31ef9c0f20475fcb94354a2708b"
+  },
+  {
+    "name": "IPriceOracle",
+    "source_commit": "81d2b8b93013f3b9dd56655f818b0586437c2279",
+    "compiler": "0.8.31+commit.fd3a2265",
+    "via_ir": false,
+    "evm_version": "osaka",
+    "execution_network": "monad",
+    "sha256": "a93de47d27321fd90a5b2e9d88c2b6e2e033b1f810429031e3493381562f6fea"
+  },
+  {
+    "name": "ICreditPoolFactory",
+    "source_commit": "81d2b8b93013f3b9dd56655f818b0586437c2279",
+    "compiler": "0.8.31+commit.fd3a2265",
+    "via_ir": false,
+    "evm_version": "osaka",
+    "execution_network": "monad",
+    "sha256": "a61a6a98fd6f32d61341f9964a996932a9614d9df9b7d790994de5a2310b07bc"
+  }
+]

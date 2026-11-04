@@ -1,0 +1,34 @@
+.DS_Store
+/target/
+/out/
+/cache/
+/broadcast/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+/runtime/
+/state/
+*.lock.tmp
+*.json.lock
+.*.tmp
+
+# Generated local files and internal development records
+__pycache__/
+*.py[cod]
+/artifacts/
+/AGENTS.md
+/docs/evidence/
+/docs/research/
+/test-results/
+/reports/
+/docs/reviews/
+/docs/plans/
+/.pytest_cache/
+/CLAUDE.md
+
+# Optional private source mounts for fixture regeneration
+/tests/fixtures/protocol-v5/solidity/src/
+/tests/fixtures/protocol-v5/solidity/test/
+/tests/fixtures/protocol-v5/solidity/foundry.toml

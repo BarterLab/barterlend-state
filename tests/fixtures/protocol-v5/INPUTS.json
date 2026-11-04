@@ -1,0 +1,508 @@
+{
+  "source_repository": "BarterLend",
+  "source_head": "81d2b8b93013f3b9dd56655f818b0586437c2279",
+  "compiler": "solc-0.8.31",
+  "foundry": "1.8.4",
+  "compiler_settings": {
+    "via_ir": false,
+    "optimizer": true,
+    "optimizer_runs": 200,
+    "evm_version": "osaka"
+  },
+  "library_gitlinks": {
+    "forge-std": "0844d7e1fc5e60d77b68e469bff60265f236c398",
+    "openzeppelin-contracts": "fcbae5394ae8ad52d8e580a3477db99814b9d565",
+    "permit2": "cc56ad0f3439c502c246fc5cfcc3db92bb8b7219",
+    "aave-v3-origin": "5a230ec82fcb10afc7fe7cffa8978752fb17aa2b"
+  },
+  "files": [
+    {
+      "path": "foundry.toml",
+      "sha256": "9f9b0746426639c882adce816a6b7fbf24c2cfca1bc02af873c7f55cb09228b3",
+      "bytes": 327,
+      "origin": "fixture-generator"
+    },
+    {
+      "path": "lib/aave-v3-origin/LICENSE",
+      "sha256": "f4a749d4fc93297053773ef3f1be40881c140f4f1f4db7223666d39e7e44f434",
+      "bytes": 6211,
+      "origin": "upstream-license"
+    },
+    {
+      "path": "lib/aave-v3-origin/src/contracts/interfaces/IPool.sol",
+      "sha256": "63b0f5fc154fa5e485a59835e35a3bdcd2c3cd701e7d9466bb9ccc4b91f18991",
+      "bytes": 36822,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/aave-v3-origin/src/contracts/interfaces/IPoolAddressesProvider.sol",
+      "sha256": "6a44f3a913093d62dd072d1691cf605a76262f56da42cbecdcf80607d8aeef94",
+      "bytes": 8210,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/aave-v3-origin/src/contracts/protocol/libraries/types/DataTypes.sol",
+      "sha256": "ed7d4bb4f65c117d4a5b07bd631ddefdfe4f3517736c8745a991f8f2c046f57c",
+      "bytes": 9806,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/LICENSE-APACHE",
+      "sha256": "50b6bf8bdb63265ce14953b480b7aaa0271e78f56843b99c184abd3ae5048cd7",
+      "bytes": 10897,
+      "origin": "upstream-license"
+    },
+    {
+      "path": "lib/forge-std/LICENSE-MIT",
+      "sha256": "6d185dfe089d4de346d391fc5997fbd4739bad1d6556010413c10f420d704ecc",
+      "bytes": 1073,
+      "origin": "upstream-license"
+    },
+    {
+      "path": "lib/forge-std/src/Base.sol",
+      "sha256": "76b05dda37981797d3d403f29fc6cad79b46e2fc11da47d649ff13acb69158b2",
+      "bytes": 2248,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/Script.sol",
+      "sha256": "cfb5be01f4ddbc037a3502dac3d487d629a4c8b58aa9e2ec48c9fa1b334d96ec",
+      "bytes": 896,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/StdAssertions.sol",
+      "sha256": "9d5f9c6ac7ccf52a3979ed1c25ff3ce4e4c89da9fe0b7634bad00f3e96e94a78",
+      "bytes": 25485,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/StdChains.sol",
+      "sha256": "addc8680699ac8815f54f91e731be3b0a1768da5daba822c27e3492807e0a92c",
+      "bytes": 15107,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/StdCheats.sol",
+      "sha256": "8ffbcd456929e69a8b9911f39b9a8dca436da1af74527901526d13e57121dc83",
+      "bytes": 31882,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/StdConstants.sol",
+      "sha256": "17dfd996881264de1e6af6697a3dc7a56ae8ff0717e4cb4f1685bd7fb3a45147",
+      "bytes": 1882,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/StdError.sol",
+      "sha256": "26101226d3cfd90ef839531ba9e19534c6321f8f416e08f99880906f27eefecb",
+      "bytes": 1028,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/StdInvariant.sol",
+      "sha256": "1987e5cfa4026fcf1d7f0a33ecba2d1f1c7b72129b22fac6799f6497ee924fc1",
+      "bytes": 5577,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/StdJson.sol",
+      "sha256": "95c69f1c24a366a2d90e7c301ed61d165ccc42f9ccd6c468e5ede2950712c9fb",
+      "bytes": 9643,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/StdMath.sol",
+      "sha256": "fcbc863654bf85df25a3af051491c7bb40fcda83dea1bca58a69e5fe3dd772fa",
+      "bytes": 1614,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/StdStorage.sol",
+      "sha256": "c09178fd432f7582d7e9154bf5bafc56404e1aa53c29563e6494cd076f90e15f",
+      "bytes": 17977,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/StdStyle.sol",
+      "sha256": "3803f5f2ef9a9a7f07342ee3a0522a615834d13130aeeeb9c1ef0444520fbc17",
+      "bytes": 10476,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/StdToml.sol",
+      "sha256": "d3fc05f5edc6abc22084e84eda605f8de2e2a1bd4908df992b431e73f0690cdd",
+      "bytes": 9643,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/StdUtils.sol",
+      "sha256": "5e40cd3d1bac6bb3268a28e9375a4c385a3b92aca109191173af0be9ec6c4de9",
+      "bytes": 9504,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/Test.sol",
+      "sha256": "2e69383110d088b4c413edf79bb71f9d05e4791625fb7fa53429d34440ea50dd",
+      "bytes": 1075,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/Vm.sol",
+      "sha256": "027e1c5a01c29d296719b07186c93c1636d35c23aa8c8cc3b3d2d0c8ea9f08c9",
+      "bytes": 134034,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/console.sol",
+      "sha256": "576b1781bbbf2ab8ca366622689ca989d075286936ca0d7341ce1dee3bb9f389",
+      "bytes": 69097,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/console2.sol",
+      "sha256": "62d8ccbd118fec4f99c5e847322d6ca0d7fbe6a0a16e5a26b0590869fcd69357",
+      "bytes": 131,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IMulticall3.sol",
+      "sha256": "890a5b361034daa6006b3ba2275e743cd6197c4d81e3df5732cdce731d3c0868",
+      "bytes": 2141,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/forge-std/src/safeconsole.sol",
+      "sha256": "fd74d8ed377e1470217cd6dce7699dcbc4e79b3893f17ae2a298c0e7e4418181",
+      "bytes": 408927,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/LICENSE",
+      "sha256": "13cd784a6c31361f0e0c6aa3b410a1cb9a079868b7314c13e3eb8a75351746b9",
+      "bytes": 1090,
+      "origin": "upstream-license"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "bytes": 3102,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/interfaces/IERC1363.sol",
+      "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+      "bytes": 4454,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol",
+      "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+      "bytes": 193,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol",
+      "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+      "bytes": 182,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+      "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+      "bytes": 6540,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+      "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+      "bytes": 10800,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+      "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+      "bytes": 2781,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+      "bytes": 684,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+      "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+      "bytes": 13314,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+      "sha256": "73e54e15285455f0e01e136c3663732641537614723ae5dbd820eb3cb036b1fd",
+      "bytes": 6803,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "bytes": 963,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/utils/Errors.sol",
+      "sha256": "0704b9d6c032cca8512a3bc3f30f49f86f1f03102d2896a3d23e794b82efea66",
+      "bytes": 896,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/utils/LowLevelCall.sol",
+      "sha256": "9f8d9cc86dfa127c950545d7b569bd8fdec32dcce4c409ea04a3e3c5d8c9121d",
+      "bytes": 5505,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/utils/Multicall.sol",
+      "sha256": "bb203e6a32bb3f377e6b0c8269642ca2816f815deb4a533f35ef42eef0beda5c",
+      "bytes": 1709,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/utils/Panic.sol",
+      "sha256": "270fc8401c1a13fae6a7a4a2dd6e381b95d658896701e51f0d3e2688acab3dec",
+      "bytes": 1973,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/utils/ReentrancyGuardTransient.sol",
+      "sha256": "cff7c20aed945d939b764d876adbd42e1b7725d62d5b1f2bd303db237567b575",
+      "bytes": 2848,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/utils/TransientSlot.sol",
+      "sha256": "ea92f361d697ba8b1fbd322b4d84b989998862c21fbebfa4b45289dc94a9eea2",
+      "bytes": 5075,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+      "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+      "bytes": 871,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+      "sha256": "8219debc76137c8103ea66340ae04185e34d6f33d1d735d2e9a88288cc435f10",
+      "bytes": 32363,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/utils/math/SafeCast.sol",
+      "sha256": "9769274bf53f26a7c7896c526ea1980dc9bea5bf5c2a5fd04870008c4afc1de9",
+      "bytes": 34943,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/permit2/LICENSE",
+      "sha256": "e0e163f93b3c53b5af417ba2395506ecc7c043b50481a15017f3a6b0875a5e78",
+      "bytes": 1069,
+      "origin": "upstream-license"
+    },
+    {
+      "path": "lib/permit2/src/interfaces/IAllowanceTransfer.sol",
+      "sha256": "a31c712c5cc8d171818a4225c09011f9ba86b2d5edf6045ac812bab93b6bbb87",
+      "bytes": 7703,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/permit2/src/interfaces/IEIP712.sol",
+      "sha256": "e386407da496dbe874c10a81801c55744fb2922a51389a51c79001422e81e0cd",
+      "bytes": 144,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/permit2/src/interfaces/IPermit2.sol",
+      "sha256": "51a2a4da1246abda880b17c72f7c45ab3a8dc4bcaac5ff7ba78221b6603cd7ce",
+      "bytes": 548,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/permit2/src/interfaces/ISignatureTransfer.sol",
+      "sha256": "8e7f355d7751cf96e81069c17fb97a3ec973c9391fbbb58ad3fb6e75be5cb19b",
+      "bytes": 6875,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "lib/permit2/test/utils/DeployPermit2.sol",
+      "sha256": "c1a8b89e6c39377490c3c6f7290e9cd40e59c2156333261955feee34a84d4d41",
+      "bytes": 18986,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/CreditPool.sol",
+      "sha256": "7a5788dd93380eaec64f9400b064d016ce4b3f05bff3ea0a6880bf18390f7e78",
+      "bytes": 17877,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/CreditPoolBase.sol",
+      "sha256": "5bfea59bb86f8cecbe546e9abeefe9e678827bd33b06bf323381a12aaa3f6840",
+      "bytes": 141472,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/CreditPoolRolloverExtension.sol",
+      "sha256": "5b8e52f345d23c0c427c4b31eac00846a28941f1d1acf72829acade0b2a638ba",
+      "bytes": 13765,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/Delegator.sol",
+      "sha256": "40ef08e557c8911276d3c04a63c7ff9c7e89fd06c47373cd5a67a279d7f87f2e",
+      "bytes": 2266,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/adapters/AaveV3Adapter.sol",
+      "sha256": "2b05fad7dbb46ebf4b02e4de2d169867518e57eb44e685f4e5f29fb59a6b32d7",
+      "bytes": 4162,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/facets/CreditPoolFacet1.sol",
+      "sha256": "769dcbfa51c7bdf9fa885fcc11a9c9da023e606d1c5787a089ac59495eb68910",
+      "bytes": 3246,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/facets/CreditPoolFacet2.sol",
+      "sha256": "059f54eefdb1db297dfc68a9217ad610297aff6306799ef9818500ba85ae3ca7",
+      "bytes": 1743,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/facets/CreditPoolFacet3.sol",
+      "sha256": "764dd75350404344bf89d35382d1e290e1ce1ebd2085d18fdcc775d81f981844",
+      "bytes": 1590,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/facets/CreditPoolFacet4.sol",
+      "sha256": "c2b0cd6aea78126123b7d3a6099ae9aba07b1447df04bc2857c123e255069d59",
+      "bytes": 994,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/interfaces/IAaveV3AToken.sol",
+      "sha256": "17eb856453160797788c7f95c998214725c01e77516e9b59d6818a4e6cb428c9",
+      "bytes": 510,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/interfaces/ICreditPool.sol",
+      "sha256": "88bfc496d989553ebb64b280b17370bb82327dca9a7bb5110198e35ec1f6811e",
+      "bytes": 71196,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/interfaces/ICreditPoolExtension.sol",
+      "sha256": "4f1e4c76ada8273df2409ea8ddc6190e42e685678e1927b17236fef48224679b",
+      "bytes": 484,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/interfaces/ICreditPoolFactory.sol",
+      "sha256": "30fe4724dc39f2ba4d5724da9433ba581a749800b98836eb7b479b5400a517d4",
+      "bytes": 335,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/interfaces/ICreditPoolRolloverExtension.sol",
+      "sha256": "1e36b58a3407d25690ba038432c7a132447bb23b882a0f0d380014771e75ab42",
+      "bytes": 12516,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/interfaces/ILiquidator.sol",
+      "sha256": "ac45ec19aa6eac4249c967980e33d31e4fa8e738ad50462799fe7f926b2f8083",
+      "bytes": 237,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/interfaces/IPriceOracle.sol",
+      "sha256": "a86fbb0faa4eb0761d447e715506857e75fe8273c32096902cbeb98322546c63",
+      "bytes": 1333,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/interfaces/IUnderlyingPool.sol",
+      "sha256": "b75c2f4e9ea8d4fd2b3e7b37b8e98c40c7c33cbc2306ac47d6d6a1b27f360b56",
+      "bytes": 2839,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/lib/BitSet.sol",
+      "sha256": "daeb2e3d3f38b4d706d2fda5c1dfec7f75ac385dca57b0866d8a357f3cfddbde",
+      "bytes": 5849,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/lib/MarketsConfig.sol",
+      "sha256": "9a5234c61de9a9cf0fb6bb3d1e30d2056b877ba9ae7aabffe1da44f6e33d8eb9",
+      "bytes": 6539,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/lib/PriceMath.sol",
+      "sha256": "8a74787a95e271fa807ef0ea238531d62d1c417851f69a05b24e1e610c759244",
+      "bytes": 728,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "src/lib/Set.sol",
+      "sha256": "158375229c114ec858899dd813982dcbebde6b68d2f7670d0008166839eb71fc",
+      "bytes": 2664,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "test/CreditPool/0_base.t.sol",
+      "sha256": "07939b2d8f5c0c2c050e14bcbb1e7f4d3b4c8f51eb3a893113c92001e2018d44",
+      "bytes": 15327,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "test/generator/ProtocolStateFixtures.t.sol",
+      "sha256": "2fc86266d3c82f61b879fe49ad0b231294d2cdb45e677e76fd54d5a031cc66e9",
+      "bytes": 19580,
+      "origin": "fixture-generator"
+    },
+    {
+      "path": "test/mocks/MockAavePool.sol",
+      "sha256": "3d13c6f37e781943f017a36f9f70e871901733d46522d7b458962857cd39b628",
+      "bytes": 6554,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "test/mocks/MockAaveToken.sol",
+      "sha256": "5b4e757627e629a97a5077ef2879c2cb9ff4a0e2bc7f1e49008066ffdd143e8f",
+      "bytes": 6574,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "test/mocks/MockPriceOracle.sol",
+      "sha256": "96967579a4147c5758ba608f4d56d0ad00d40dabb119552a62b1a191c0fb9496",
+      "bytes": 1219,
+      "origin": "upstream-pinned"
+    },
+    {
+      "path": "test/mocks/MockToken.sol",
+      "sha256": "d95525b3ec293655487b169c1f03a80001a88ddf45625625d10ec2c5987a7e76",
+      "bytes": 409,
+      "origin": "upstream-pinned"
+    }
+  ],
+  "fixture_schema_version": 1,
+  "generator_note": "Recorded with vm.recordLogs from actual CreditPool operations; mocks only supply tokens/oracle and extra test getters."
+}

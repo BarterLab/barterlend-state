@@ -1,0 +1,89 @@
+{
+  "files": [
+    {
+      "path": "addresses.json",
+      "sha256": "de94f83aa6d528ee98506dd7ff633c799761918132e4f513f37642460b9868b4",
+      "bytes": 638
+    },
+    {
+      "path": "admin.json",
+      "sha256": "9aa3222928527da81249cc3bf1cf22be7836846c5be15932d9a1323a26e0b8c6",
+      "bytes": 2712
+    },
+    {
+      "path": "anvil-state.json",
+      "sha256": "f5a30f85f5818e0c8f017a9b66d275e22c11502dd610383f62f837a6723ee9bc",
+      "bytes": 354726
+    },
+    {
+      "path": "borrowed.json",
+      "sha256": "afe899e9ce491e42dcf0ef5cc87af8751396e151d78eadbd809998d2c558f944",
+      "bytes": 1583
+    },
+    {
+      "path": "collateral.json",
+      "sha256": "d80d6e4710fd2e2b4b2b07026dc800988c191792ba5d27465b9feeddd19be499",
+      "bytes": 2274
+    },
+    {
+      "path": "empty-pool-state.json",
+      "sha256": "45bbf1f65b9c3f42e436642f3971948fcab0c83b9662cd0acff977ab98d24283",
+      "bytes": 352780
+    },
+    {
+      "path": "liquidated-bad-debt.json",
+      "sha256": "5b70c3954375990fa15d3f4700d019aa5d709b924d38a0fb827bcd32e3613e25",
+      "bytes": 1880
+    },
+    {
+      "path": "offset.json",
+      "sha256": "1ec6f10323e4c6b7b74a2891950368c3b4c36acd2525fe5f1cd5b021e7066349",
+      "bytes": 1411
+    },
+    {
+      "path": "provided-all-arrays.json",
+      "sha256": "f6abf7a261e9619ec441f3b7d271576dd8614ae21547e260b50e3a2194fe28b5",
+      "bytes": 3776
+    },
+    {
+      "path": "provided-borrow.json",
+      "sha256": "63da4bcd5677e2ef4b34ef388a09a3314b34d4e7b424c14ae14f33f1653b51ac",
+      "bytes": 2237
+    },
+    {
+      "path": "provided-mixed.json",
+      "sha256": "dc551b05a3bc07bc67cb6d536b14af2cdac13e6a132be78cc5f2a9cbf557f849",
+      "bytes": 2553
+    },
+    {
+      "path": "refinanced.json",
+      "sha256": "45f7ba247c4af1dea36c2f5ca43644e98cef842ca7a302f02f5619dab7051f54",
+      "bytes": 2329
+    },
+    {
+      "path": "reloaned.json",
+      "sha256": "aaa1a3404038af00541f993890689cbe065b3738a0d3aa0592b4e1dc1df5f932",
+      "bytes": 1647
+    },
+    {
+      "path": "repaid-other-payer.json",
+      "sha256": "fe2a93501d57f94a81d2c95f44c3cbf4a957cbc1fa6aa8918ae94e3b82424258",
+      "bytes": 1542
+    },
+    {
+      "path": "risk-vectors.json",
+      "sha256": "4c1462394481e51a2da1224f2cfd82564f76c2aaa2e4b5657c9f4c0a83c8580c",
+      "bytes": 5518
+    },
+    {
+      "path": "sweep.json",
+      "sha256": "2296b8c264f3a8a89c3b3755f40375eba4b8c9acb10109f9b5aa9aefa2728219",
+      "bytes": 3109
+    },
+    {
+      "path": "underlying-index.json",
+      "sha256": "18a31d93072290c3005d5d752305087a806f02fbc4e006ec7235be2c939180cb",
+      "bytes": 1796
+    }
+  ]
+}
